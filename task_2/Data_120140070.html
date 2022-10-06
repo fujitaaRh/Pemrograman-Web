@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-image: url(./bg.jpg)
+        }
+        .form{
+            background-color: lightblue;
+            position: fixed;
+            margin-top: -100px;
+            margin-left: -200px;
+            left: 50%;
+            top: 30%;
+            width: 400px;
+            height: 440px;
+            border: 10px solid black;
+          }
+        #submit{
+            border: 2px solid blue;
+            border-radius: 3px;
+            background-color: aquamarine;
+        }
+        #submit:hover{
+            border:0px;
+            font-size: medium;
+            background-color: bisque;
+        }
+        input{
+            margin-bottom: 4px;
+        }
+        input[type=submit]{
+            margin-top: 20px;
+            margin-left: 50px;
+            text-align: center;
+        }
+        input:hover{
+            background-color: azure;
+        }
+        .element-label{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            font-size: small;
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="row justify-content-center">
+                <fieldset>
+                    <center><h2>Form Pendaftaran</h2></center>
+                    <form action="hal22.html" method="get">
+                        <center><img src="./pp.jpg" alt="" width="90px" height="120px"></center><br>
+
+
+                        <label class="element-label">First Name</label><br>
+                        <input type="text" class="form-control" name="nama" id="nama" value="Fujita" disabled><br>
+
+                        <label class="element-label">Last Name</label><br>
+                        <input type="text" class="form-control" name="nama" id="nama" value="Rahmah" disabled><br>
+
+                        <label class="element-label">Golongan Darah</label><br>
+                        <input type="text" class="form-control"  name="nama" id="nama" value="D" disabled><br>
+
+                        <label class="element-label">Address</label><br>
+                        <input type="text" class="form-control"  name="address" id="address" value="Sukabumi" disabled ><br>
+
+                        <label class="element-label">Birth</label><br>
+                        <input type="text" class="form-control"  name="birth" id="birth" value="18 Januari 2002" ><br>
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
